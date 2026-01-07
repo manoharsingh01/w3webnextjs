@@ -1,48 +1,74 @@
-import React, { useEffect } from 'react';
-//= Components
+import React, { useEffect, useRef } from 'react';
 import Intro from './Intro';
 import Awards from './Awards';
 import CallToAction from './CallToAction';
 
 function HzScroll({ lightMode }) {
+  const tweenRef = useRef(null);
+  const resizeTimerRef = useRef(null);
+
+  const killHzScroll = () => {
+    try {
+      tweenRef.current?.scrollTrigger?.kill(true);
+      tweenRef.current?.kill();
+    } catch (e) { }
+    tweenRef.current = null;
+  };
+
+  const initHzScroll = () => {
+    if (typeof window === 'undefined') return;
+    if (window.innerWidth <= 991) {
+      killHzScroll();
+      return;
+    }
+
+    killHzScroll();
+
+    gsap.registerPlugin(ScrollTrigger);
+    const sections = gsap.utils.toArray('.panel');
+    const container = document.querySelector('.thecontainer');
+    if (!container || sections.length < 2) return;
+
+    tweenRef.current = gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
+      ease: 'none',
+      scrollTrigger: {
+        id: 'hzScroll',
+        trigger: container,
+        pin: true,
+        scrub: 1,
+        invalidateOnRefresh: true,
+        end: () => `+=${container.offsetWidth}`,
+      },
+    });
+
+    requestAnimationFrame(() => ScrollTrigger.refresh());
+    setTimeout(() => ScrollTrigger.refresh(), 250);
+  };
+
   useEffect(() => {
-    if (window.innerWidth > 991) {
-      gsap.registerPlugin(ScrollTrigger);
-      let sections = gsap.utils.toArray(".panel");
-      gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".thecontainer",
-          pin: true,
-          scrub: 1,
-          end: () => "+=" + document.querySelector(".thecontainer").offsetWidth
-        }
-      });
-    }
+    initHzScroll();
 
+    const onLoad = () => {
+      if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+    };
+
+    const handleResize = () => {
+      window.clearTimeout(resizeTimerRef.current);
+      resizeTimerRef.current = window.setTimeout(() => {
+        initHzScroll();
+      }, 150);
+    };
+
+    window.addEventListener('load', onLoad);
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('load', onLoad);
+      window.removeEventListener('resize', handleResize);
+      window.clearTimeout(resizeTimerRef.current);
+      killHzScroll();
+    };
   }, []);
-
-  async function handleResize() {
-    if (window.innerWidth < 991 && document.querySelector('.thecontainer').style.maxHeight) {
-      location.reload();
-    } else if (window.innerWidth > 991 && !document.querySelector('.thecontainer').style.maxHeight) {
-      gsap.registerPlugin(ScrollTrigger);
-      let sections = gsap.utils.toArray(".panel");
-      gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".thecontainer",
-          pin: true,
-          scrub: 1,
-          end: () => "+=" + document.querySelector(".thecontainer")?.offsetWidth
-        }
-      });
-    }
-  }
 
   return (
     <section className="thecontainer ontop">
