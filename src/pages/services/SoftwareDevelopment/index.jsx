@@ -33,6 +33,7 @@ const Branding = () => {
       </Head>
 
       <Loader />
+      <Layout>
       <Navbar mainBg />
       <main>
         <Header data={headerMetadata} subBg={true} />
@@ -42,6 +43,7 @@ const Branding = () => {
         <FAQ />
         <CallToAction innerPageStyle />
       </main>
+      </Layout>
       <Footer />
     </>
   )

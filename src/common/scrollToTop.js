@@ -2,6 +2,8 @@ const scrollToTop = () => {
   let offset = 150;
   let progressWrap = document.querySelector(".progress-wrap");
   let progressPath = document.querySelector(".progress-wrap path");
+  if (!progressWrap || !progressPath) return;
+
   let pathLength = progressPath.getTotalLength();
   const updateProgress = async ()  => {
     let scroll = window.pageYOffset;
@@ -24,9 +26,7 @@ const scrollToTop = () => {
       if (window.pageYOffset > offset) {
         progressWrap.classList.add("active-progress");
       } else {
-        document
-          .querySelector(".progress-wrap")
-          .classList.remove("active-progress");
+        progressWrap.classList.remove("active-progress");
       }
     });
     progressWrap.addEventListener("click", function (event) {

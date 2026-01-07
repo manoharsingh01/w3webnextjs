@@ -33,6 +33,7 @@ function PageServices() {
       </Head>
 
       <Loader />
+      <Layout>
       <Navbar mainBg />
       <main>
         <Header data={headerMetadata} subBg={true} />
@@ -42,6 +43,7 @@ function PageServices() {
         <FAQ />
         <CallToAction innerPageStyle />
       </main>
+      </Layout>
       <Footer />
     </>
   )
