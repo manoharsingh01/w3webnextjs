@@ -18,17 +18,21 @@ function Portfolio({ lightMode }) {
       isElements: true,
       callback(element) {
         element.classList.add('current');
-        document.querySelector("#" + element.getAttribute('data-tab')).classList.add('current');
+        const tabId = element.getAttribute('data-tab');
+        const tabEl = tabId ? document.getElementById(tabId) : null;
+        tabEl?.classList.add('current');
       },
       whenOutOfView(element) {
         element.classList.remove('current');
-        document.querySelector("#" + element.getAttribute('data-tab')).classList.remove('current');
+        const tabId = element.getAttribute('data-tab');
+        const tabEl = tabId ? document.getElementById(tabId) : null;
+        tabEl?.classList.remove('current');
       }
     });
 
     const leftSide = document.getElementById('sticky_item');
-    if (!leftSide) return;
     const portfolio_fixed = document.querySelector('.portfolio-fixed')
+    if (!leftSide || !portfolio_fixed) return;
     const width = leftSide.getBoundingClientRect().width;
     const portfolio = portfolio_fixed.getBoundingClientRect();
 

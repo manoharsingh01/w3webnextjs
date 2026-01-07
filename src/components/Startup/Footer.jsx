@@ -5,7 +5,7 @@ import data from '@/data/app-data.json';
 function Footer({ lightMode, subBg }) {
   useEffect(() => {
     if (window.innerWidth > 991) {
-      gsap.set('.footer-container', { yPercent: -50 })
+      gsap.set('.footer-container', { yPercent: 0 })
       const uncover = gsap.timeline({ paused: true })
       uncover.to('.footer-container', { yPercent: 0, ease: 'none' });
       ScrollTrigger.create({
