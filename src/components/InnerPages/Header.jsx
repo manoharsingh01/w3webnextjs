@@ -27,7 +27,7 @@ and technology to build seamless, high-performing digital experiences.</p>
             {
               new Array(5).fill().map((_, i) => (
                 <div className="item" key={i}>
-                  <h4>Software Development</h4>
+                  <h4>Services</h4>
                 </div>
               ))
             }

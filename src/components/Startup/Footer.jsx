@@ -29,7 +29,7 @@ function Footer({ lightMode, subBg }) {
                   <h6>Address</h6>
                 </div>
                 <div className="text">
-                  <p>Germany — 785 15h Street, Office 478 Berlin, De 81566</p>
+                  <p>4th Floor, F388, Charu Tower, Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar, Punjab 160055</p>
                 </div>
               </div>
             </div>
@@ -40,10 +40,10 @@ function Footer({ lightMode, subBg }) {
                 </div>
                 <div className="text">
                   <p className="mb-10">
-                    <a href="#0">hello@design.com</a>
+                    <a href="mailto:info@w3webs.com">info@w3webs.com</a>
                   </p>
                   <h5>
-                    <a href="#">+1 840 841 25 69</a>
+                   <a href="tel:+91:9814930250">+91: 9814930250</a>
                   </h5>
                 </div>
               </div>
@@ -97,7 +97,7 @@ function Footer({ lightMode, subBg }) {
               <div className="col-lg-8">
                 <div className="copyright d-flex">
                   <div className="ml-auto">
-                    <p className="fz-13">© 2023 Geekfolio is Proudly Powered by <span className="underline"><a href={data.author_link} target="_blank">{data.author}</a></span></p>
+                    <p className="fz-13">© 2026 w3web All rights reserved</p>
                   </div>
                 </div>
               </div>

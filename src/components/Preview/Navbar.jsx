@@ -59,12 +59,12 @@ function Navbar() {
                 <span className="rolling-text">Services</span>
               </Link>
               <div className="dropdown-menu">
-                <Link className="dropdown-item" href="/services/SoftwareDevelopment">Software Development</Link>
-                <Link className="dropdown-item" href="/services/MobileAppDevelopment">Mobile App Development</Link>
-                <Link className="dropdown-item" href="/services/Branding">Branding </Link>
-                <Link className="dropdown-item" href="/services/UXDesign">UX Design </Link>
-                <Link className="dropdown-item" href="/services/WebDevelopment">Web Development </Link>
-                <Link className="dropdown-item" href="/services/DigitalMarketing">Digital Marketing </Link>
+                <Link className="dropdown-item" href="/services/software-development">Software Development</Link>
+                <Link className="dropdown-item" href="/services/mobile-app-development">Mobile App Development</Link>
+                <Link className="dropdown-item" href="/services/branding">Branding </Link>
+                <Link className="dropdown-item" href="/services/ux-design">UX Design </Link>
+                <Link className="dropdown-item" href="/services/web-development">Web Development </Link>
+                <Link className="dropdown-item" href="/services/digital-marketing">Digital Marketing </Link>
               </div>
             </li>
             

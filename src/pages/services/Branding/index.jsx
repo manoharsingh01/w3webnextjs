@@ -6,11 +6,11 @@ import Layout from '@/layouts/default';
 //= Components
 import Loader from '@/components/Common/Loader';
 import Navbar from '@/components/Preview/Navbar';
-import Header from '@/components/InnerPages/Header';
-import Services from '@/components/InnerPages/About/Services';
-import Portfolio from '@/components/InnerPages/Services/Portfolio';
+import Header from '@/components/Branding/Header';
+import Services from '@/components/Branding/About/Services';
+import Portfolio from '@/components/Branding/Services/Portfolio';
 import ServicesTab from '@/components/DigitalAgency/ServicesTab';
-import FAQ from '@/components/InnerPages/Services/FAQ';
+import FAQ from '@/components/Branding/Services/FAQ';
 import CallToAction from '@/components/Startup/CallToAction';
 import Footer from '@/components/Startup/Footer';
 
