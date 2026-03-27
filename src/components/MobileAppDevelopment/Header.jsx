@@ -15,8 +15,7 @@ function Header({ data, subBg }) {
         <div className="row">
           <div className="col-lg-5 offset-lg-4">
             <div className="text mt-30">
-              <p>At W3Web Technologies, we specialize in crafting cutting-edge web, mobile, software solutions and digital marketing that drive business success. Our expert developers blend creativity
-and technology to build seamless, high-performing digital experiences.</p>
+              <p>Advanced mobile app development services by W3 Web Technologies are designed to turn your ideas into powerful, user-friendly digital solutions. Our team focuses on building high-performance, scalable apps that deliver seamless user experiences. From initial planning and intuitive design to development and deployment, every step is handled with precision and care. We use modern technologies and smart strategies to ensure your app is secure, fast, and future-ready. Whether you're launching a new product or enhancing an existing one, we help you grow, engage users, and stand out in today’s competitive digital world.</p>
             </div>
           </div>
         </div>

@@ -3,24 +3,35 @@
     "id": 1,
     "image": "assets/imgs/portfolio/gallery/1.jpg",
     "number": "01.",
-    "type": "Digital Mob",
-    "title": "Luxury Glassware",
-    "text": "We craft premium designs for agencies and global brands around the globe."
+    "type": "Strategy & Planning",
+    "title": "Smart App Foundations",
+    "text": "We create strong app strategies by understanding your business goals, users, and market trends to ensure your mobile application is built for success.",
+    "list1":"Turn your idea into a clear roadmap",
+    "list2":"Define features that solve real problems",
+    "list3":"Build a solid foundation for scalable growth"
+
+
   },
   {
     "id": 2,
     "image": "assets/imgs/portfolio/gallery/2.jpg",
     "number": "02.",
-    "type": "Marketing",
-    "title": "Brand Identity",
-    "text": "We craft premium designs for agencies and global brands around the globe."
+    "type": "Development & Integration",
+    "title": "High-Performance App Solutions",
+    "text": "We develop secure, fast, and scalable mobile applications using modern technologies, ensuring smooth performance across all devices and seamless integration with essential tools.",
+    "list1":"Build powerful and reliable applications",
+    "list2":"Ensure seamless system integrations",
+    "list3":"Deliver performance-driven solutions"
   },
   {
     "id": 3,
     "image": "assets/imgs/portfolio/gallery/3.jpg",
     "number": "03.",
-    "type": "Design",
-    "title": "Roseville Pottery",
-    "text": "We craft premium designs for agencies and global brands around the globe."
+    "type": "UI/UX Design",
+    "title": "Engaging User Experiences",
+    "text": "We design intuitive and visually appealing interfaces that enhance usability and keep users engaged, ensuring your app delivers a smooth and meaningful experience.",
+    "list1":"Create user-friendly app interfaces",
+    "list2":"Improve engagement and retention",
+    "list3":"Design experiences users enjoy"
   }
 ]
