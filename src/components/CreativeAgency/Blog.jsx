@@ -46,13 +46,13 @@ function Blog() {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <h6 className="dot-titl mb-10">Selected Projects</h6>
-                <h2 className="fz-70 fw-700">Our News & Insights</h2>
+                <h6 className="dot-titl mb-10">Our News & Insights</h6>
+                <h2 className="fz-70 fw-700">Expert Knowledge, Trends & Industry Updates</h2>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center">
               <div className="text">
-                <p>Nemo enim ipsam voluptatem quia voluptas sit odit aut fugit, sed quia.</p>
+                <p>Our blogs cover a wide range of topics including industry trends, how-to guides, best practices, emerging technologies, and strategic insights that help businesses and individuals make smarter decisions.</p>
               </div>
             </div>
           </div>

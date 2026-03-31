@@ -13,10 +13,10 @@ import SectionImage from '@/components/CreativeAgency/SectionImage';
 import Services from '@/components/CreativeAgency/Services';
 import Portfolio from '@/components/CreativeAgency/Portfolio';
 import Testimonials from '@/components/CreativeAgency/Testimonials';
-import Team from '@/components/CreativeAgency/Team';
 import HzScroll from '@/components/CreativeAgency/HorizontalScroll';
 import Blog from '@/components/CreativeAgency/Blog';
 import Footer from '@/components/CreativeAgency/Footer';
+import ServicesNew from '@/components/CreativeAgency/ServicesNew';
 
 function HomeCreativeAgency() {
   useEffect(() => {
@@ -29,18 +29,17 @@ function HomeCreativeAgency() {
       <Head>
         <title>W3Web Technologies </title>
       </Head>
-
       <Loader />
       <Navbar mainBg />
       <main className="main-bg position-re">
         <Header />
         <Marq />
         <Intro />
+        <ServicesNew />
         <SectionImage />
         <Services />
         <Portfolio />
         <Testimonials />
-        <Team />
         <HzScroll />
         <Blog />
       </main>

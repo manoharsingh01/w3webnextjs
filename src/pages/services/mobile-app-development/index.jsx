@@ -23,7 +23,7 @@ const Branding = () => {
   
     const headerMetadata = {
       subTitle: "WHAT CAN WE DO ?",
-      title: "Advanced Mobile App Development Services to Transform Your Digital Vision",
+      title: "We combine our passion for design and code.",
       text: "SERVICES"
     }
   return (

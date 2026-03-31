@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/imgs/serv-icons/0.png",
+    "title": "Software Development",
+    "text": "Build robust, scalable and secure software tailored to your business needs. Our developers use the newest technologies to make high-performance systems that make operations easier and more efficient, from enterprise solutions to custom applications."
+  },
+  {
+    "id": 2,
+    "image": "/assets/imgs/serv-icons/1.png",
+    "title": "Mobile App Development",
+    "text": "Turn your mobile app vision into reality. We develop iOS and Android apps that work perfectly and are easy to use. We create apps for businesses and consumers that keep customers interested and loyal."
+  },
+  {
+    "id": 3,
+    "image": "/assets/imgs/serv-icons/2.png",
+    "title": "Branding and Creative Design",
+    "text": "Your brand is your story, and we help you tell it in a way that makes an impact. Our creative team makes unique and memorable branding that connects with your audience and sets you apart from the competition. "
+  }
+]

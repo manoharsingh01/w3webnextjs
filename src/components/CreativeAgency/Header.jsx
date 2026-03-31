@@ -38,10 +38,10 @@ function Header({ lightMode }) {
                     stroke="currentColor" style={{ "--index": 6, "--transform": '180deg' }}></line>
                 </svg>
               </div>
-              <h4 className="fw-300 mb-15">Digital agency studio</h4>
+              {/* <h4 className="fw-300 mb-15">Digital agency studio</h4> */}
               <h1 className="fw-600 d-rotate wow">
-                <span className="rotate-text">a creative digital</span>
-                <span className="rotate-text">design studio</span>
+                <span className="rotate-text">Web & App Development and Digital Marketing Agency</span>
+                {/* <span className="rotate-text">design studio</span> */}
               </h1>
             </div>
           </div>
@@ -76,6 +76,12 @@ function Header({ lightMode }) {
             </div>
           </div>
         </div>
+        
+        <p>W3Web Technologies is a full-service <strong>Web & App Development and Digital Marketing Agency</strong> helping startups, SMEs, and enterprises build powerful digital experiences that drive measurable business growth. We specialise in <strong>custom software development, web design and development, mobile app development, UX/UI design, branding, AWS cloud solutions</strong>, and <strong>CRM development and integration</strong>, combined with performance-driven <strong>digital marketing services</strong>.</p>
+      <br></br>
+      <p>With a strategic, data-driven approach, we transform ideas into scalable digital products that engage users, strengthen brand presence, and deliver real, measurable results for businesses worldwide.</p>
+      <br></br>
+      <br></br>
       </div>
       <div className="bg-pattern bg-img" data-background={`/${lightMode ? 'light' : 'dark'}/assets/imgs/patterns/graph.png`}></div>
     </header>

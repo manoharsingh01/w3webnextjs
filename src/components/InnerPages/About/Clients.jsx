@@ -12,7 +12,7 @@ function Clients({ lightMode }) {
         <div className="row justify-content-center mb-80">
           <div className="col-lg-6 text-center">
             <div className="text">
-              <h3>We create experiences and turn ideas into reality.</h3>
+              <h3>Our Vision & Mission</h3>
             </div>
           </div>
         </div>
@@ -36,6 +36,10 @@ function Clients({ lightMode }) {
                 ))
               }
             </div>
+            {/* <div className='our_vision'>
+            <p><strong>Vision:</strong> To be a leading digital solutions provider, giving businesses the technology they need to succeed.</p>
+            <p><strong>Mission:</strong> Our mission is to give our clients new, dependable, and user-friendly digital experiences that help them succeed now and in the future.</p>
+            </div> */}
           </div>
         </div>
       </div>

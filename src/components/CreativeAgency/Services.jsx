@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 //= Data
-import data from '@/data/CreativeAgency/services.json';
+import data from '@/data/CreativeAgency/services.json'; 
 
 function Services({ lightMode }) {
   return (
@@ -10,7 +10,7 @@ function Services({ lightMode }) {
         <div className="row">
           {
             data.map(item => (
-              <div className="item-bord col-lg-3 col-md-6" key={item.id}>
+              <div className="item-bord col-lg-4 col-md-6" key={item.id}>
                 <div className="icon-img-70 mb-40">
                   <img src={`/${lightMode ? 'light' : 'dark'}${item.image}`} alt="" />
                 </div>

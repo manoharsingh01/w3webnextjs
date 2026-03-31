@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "assets/imgs/serv-icons/2.png",
+    "title": "Web Development Solutions That Work",
+    "text": "We focus on making websites that are responsive, secure, and ready for search engines. These websites should be fast, functional, and easy to use. We make solutions that turn visitors into customers, from business websites to custom web platforms."
+  },
+  {
+    "id": 2,
+    "image": "assets/imgs/serv-icons/2.png",
+    "title": "Apps for Android and iOS",
+    "text": "We create and build powerful mobile apps that are easy to use and help businesses in real ways. Our mobile app solutions are scalable, have a lot of features, and are made to help your business grow over time on both Android and iOS."
+  },
+  {
+    "id": 3,
+    "image": "assets/imgs/serv-icons/2.png",
+    "title": "Designing UX and UI to improve the user experience",
+    "text": "The best digital products have great UX design. We make interfaces that are focused on the user, look good, are easy to use, and are designed to get people to interact with them. Our UX and UI design process makes sure that every interaction adds value and makes your brand stronger."
+  },
+  {
+    "id": 4,
+    "image": "assets/imgs/serv-icons/2.png",
+    "title": "Branding That Makes People Trust You and Know You",
+    "text": "We offer more than just logos when it comes to branding. We make full brand identities that show your values, connect with your audience, and set your business up for long-term success. We help brands stand out in crowded markets by working on everything from their visual identity to their messaging."
+  },
+  {
+    "id": 5,
+    "image": "assets/imgs/serv-icons/2.png",
+    "title": "Digital marketing services that help businesses grow",
+    "text": "Our digital marketing services are focused on getting results. They will help you get more visibility, reach the right people, and get more conversions. We help businesses grow online with confidence by using proven SEO techniques, content marketing, and campaigns based on performance."
+  }
+]

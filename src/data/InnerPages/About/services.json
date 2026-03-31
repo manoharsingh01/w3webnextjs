@@ -2,19 +2,19 @@
   {
     "id": 1,
     "image": "assets/imgs/serv-icons/0.png",
-    "title": "User-Centric Experience That Drives Engagement",
-    "text": "Every application is designed with a strong focus on user behavior and real interaction patterns. This ensures smooth navigation, clear interfaces, and meaningful experiences that keep users engaged and encourage long-term usage."
+    "title": "Business-driven software architecture",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
   },
   {
     "id": 2,
     "image": "assets/imgs/serv-icons/1.png",
-    "title": "Built with Modern Technology and Best Practices",
-    "text": "Development follows a structured approach using reliable technologies and proven methods. This ensures fast performance, strong security, and consistent functionality across devices, creating a dependable and high-quality digital product."
+    "title": "Scalable and secure application development",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
   },
   {
     "id": 3,
     "image": "assets/imgs/serv-icons/2.png",
-    "title": "Designed for Scalability and Future Growth",
-    "text": "Applications are built to grow with your business, supporting increasing users, features, and data. A flexible structure allows easy updates and long-term adaptability without affecting performance or user experience."
+    "title": "User-centric design and performance optimization",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
   }
 ]

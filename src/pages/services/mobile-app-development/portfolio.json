@@ -1,37 +1,39 @@
 [
   {
     "id": 1,
-    "image": "assets/imgs/portfolio/gallery/1.jpg",
-    "number": "01.",
-    "type": "Strategy & Planning",
-    "title": "Smart App Foundations",
-    "text": "We create strong app strategies by understanding your business goals, users, and market trends to ensure your mobile application is built for success.",
-    "list1":"Turn your idea into a clear roadmap",
-    "list2":"Define features that solve real problems",
-    "list3":"Build a solid foundation for scalable growth"
-
+    "image": "assets/imgs/portfolio/gallery/img-mobile-app.jpg",
+    "title": "Why Choose W3Web Technologies for Mobile App Development?",
+    "text": "In a world where mobile is the most important thing, your app is often the first thing people see of your brand. We make mobile apps that are not only good-looking, but also technically sound and useful for business.",
+    "mainHeading": "We know a lot about making mobile apps, such as:",
+    "listItem1": "Architecture for apps that can grow and be ready for the future",
+    "listItem2": "User-cantered design for UI/UX to get more people involved",
+    "listItem3": "Standards for development that are safe and work well",
+    "listItem4": "Works well with APIs, CRMs, and tools from other companies",
+    "listItem5": "Ongoing help, improvements, and upkeep"
 
   },
   {
     "id": 2,
-    "image": "assets/imgs/portfolio/gallery/2.jpg",
-    "number": "02.",
-    "type": "Development & Integration",
-    "title": "High-Performance App Solutions",
-    "text": "We develop secure, fast, and scalable mobile applications using modern technologies, ensuring smooth performance across all devices and seamless integration with essential tools.",
-    "list1":"Build powerful and reliable applications",
-    "list2":"Ensure seamless system integrations",
-    "list3":"Deliver performance-driven solutions"
+    "image": "assets/imgs/portfolio/gallery/Enterprise-Software-Development.jpg",
+    "title": "Enterprise Software Development Solutions",
+    "text": "We offer robust enterprise software development services that can handle complicated tasks and large numbers of users for big companies and businesses that are growing. Our enterprise-grade solutions help organizations manage workflows, data, and operations efficiently with secure and scalable architectures.",
+    "mainHeading":"Our business solutions help companies:",
+    "listItem1": "Make operations more efficient",
+    "listItem2": "Make sure that systems and data work together smoothly.",
+    "listItem3": "Make security and compliance better",
+    "listItem4": "Support environments with many users and a lot of traffic",
+    "listItem5": "We make sure that your business software is always reliable, scalable, and ready for the future."
   },
   {
     "id": 3,
-    "image": "assets/imgs/portfolio/gallery/3.jpg",
-    "number": "03.",
-    "type": "UI/UX Design",
-    "title": "Engaging User Experiences",
-    "text": "We design intuitive and visually appealing interfaces that enhance usability and keep users engaged, ensuring your app delivers a smooth and meaningful experience.",
-    "list1":"Create user-friendly app interfaces",
-    "list2":"Improve engagement and retention",
-    "list3":"Design experiences users enjoy"
+    "image": "assets/imgs/portfolio/gallery/Software-Product-Development-Engineering.jpg",
+    "title": "Software Product Development & Engineering",
+    "text": "We help businesses turn their ideas into software products that are ready for sale. Our software product engineering services cover the whole life cycle, from coming up with an idea and building it to optimizing it and making it bigger.",
+    "mainHeading":"This includes:",
+    "listItem1": "Building the product architecture and the MVP",
+    "listItem2": "Planning for performance and scalability",
+    "listItem3": "Improvements to features and new versions",
+    "listItem4": "Support and maintenance that never ends",
+    "listItem5": "Support and maintenance that never ends"
   }
 ]

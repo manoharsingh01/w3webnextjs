@@ -14,7 +14,7 @@ function Awards({ lightMode }) {
                   <h2 className="fz-70 fw-700">Our Awards</h2>
                 </div>
                 <div className="text mt-15">
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit odit aut fugit, sed quia.</p>
+                  <p>We are proud to be recognized for delivering innovative, high-quality digital solutions. Each award reflects our commitment to excellence, creativity, and measurable results for our clients.</p>
                 </div>
                 <div className="exp-box sub-bg mt-50 inline">
                   <div className="d-flex align-items-center">

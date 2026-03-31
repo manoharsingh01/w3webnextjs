@@ -5,17 +5,17 @@ function Header({ data, subBg }) {
     <header className={`page-header section-padding pb-0 ${subBg ? 'sub-bg' : ''}`}>
       <div className="container mt-80">
         <div className="row">
-          <div className="col-lg-8">
+          <div className="col-lg-10">
             <div className="caption">
-              <h6 className="sub-title">{data.subTitle}</h6>
-              <h1 className="fz-55">{data.title}</h1>
+              <h1 className="fz-55">Mobile App Development Services</h1>
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-5 offset-lg-4">
-            <div className="text mt-30">
-              <p>Advanced mobile app development services by W3 Web Technologies are designed to turn your ideas into powerful, user-friendly digital solutions. Our team focuses on building high-performance, scalable apps that deliver seamless user experiences. From initial planning and intuitive design to development and deployment, every step is handled with precision and care. We use modern technologies and smart strategies to ensure your app is secure, fast, and future-ready. Whether you're launching a new product or enhancing an existing one, we help you grow, engage users, and stand out in today’s competitive digital world.</p>
+          <div className="col-lg-10 ">
+            <div className="text mt-10">
+              <p>W3Web Technologies offers complete mobile app development services to businesses all over the world that want to turn their ideas into reliable, profitable mobile solutions. We create and build mobile apps for businesses of all sizes, from small startups to large global companies. These apps provide great user experiences, high performance, and measurable business growth.</p>
+              <p>Our skilled mobile app developers can make custom mobile apps, iOS app development, Android app development, or cross-platform mobile solutions that grow with your business.</p>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ function Header({ data, subBg }) {
             {
               new Array(5).fill().map((_, i) => (
                 <div className="item" key={i}>
-                  <h4>{data.text}</h4>
+                  <h4>Mobile App Development</h4>
                 </div>
               ))
             }

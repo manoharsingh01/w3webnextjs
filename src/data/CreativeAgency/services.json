@@ -1,26 +1,20 @@
 [
   {
     "id": 1,
-    "image": "/assets/imgs/serv-icons/0.png",
-    "title": "Marketing Strategy",
-    "text": "Praesent faucibus nisl sit amet nulla pretium a sed purus."
+    "image": "/assets/imgs/serv-icons/2.png",
+    "title": "UX/UI Design",
+    "text": "We make digital experiences that are easy to use and look good, which keeps people coming back. We do user research, interaction design, and visual design to make sure that our interfaces are both beautiful and easy to use."
   },
   {
     "id": 2,
     "image": "/assets/imgs/serv-icons/1.png",
-    "title": "Product Design",
-    "text": "Praesent faucibus nisl sit amet nulla pretium a sed purus."
+    "title": "Web Development",
+    "text": "Your website is often the first thing people see when they look for your business. We build fast, responsive, and SEO-ready websites that load quickly, showcase your brand, and turn visitors into customers."
   },
   {
     "id": 3,
     "image": "/assets/imgs/serv-icons/2.png",
-    "title": "Website Design",
-    "text": "Praesent faucibus nisl sit amet nulla pretium a sed purus."
-  },
-  {
-    "id": 4,
-    "image": "/assets/imgs/serv-icons/0.png",
-    "title": "Marketing Strategy",
-    "text": "Praesent faucibus nisl sit amet nulla pretium a sed purus."
+    "title": "Digital Marketing",
+    "text": "With data-driven digital marketing, you can get more people to visit your site, grow your online presence, and make more sales. We create plans for your business that include SEO, social media, PPC campaigns, and content marketing. "
   }
 ]

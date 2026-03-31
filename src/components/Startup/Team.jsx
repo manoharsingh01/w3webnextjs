@@ -82,7 +82,10 @@ function Team() {
         <div className="row">
           <div className="col-12" style={{ position: 'relative' }}>
             <div className="sec-head-lg text-center text-u mb-80" id="sticky_item">
+              <div className='container'>
               <h2>Team</h2>
+              <p>Meet the passionate professionals behind our success. Our team is a collective of skilled designers, developers, strategists, and digital experts dedicated to delivering high-quality, SEO-driven solutions that help businesses grow online.</p>
+            </div>
             </div>
             <div className="swiper4"
             >

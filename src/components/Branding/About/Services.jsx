@@ -2,7 +2,7 @@ import React from 'react';
 //= Components
 import StatementSplitter from '@/components/Common/StatementSplitter';
 //= Data
-import data from '@/data/InnerPages/About/services.json';
+import data from '@/data/InnerPages/About/brandingServices.json';
 
 function Services({ lightMode }) {
   return (
@@ -12,7 +12,6 @@ function Services({ lightMode }) {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <h6 className="dot-titl-non colorbg-3 mb-10">Featured Services</h6>
                 <h2 className="fz-60 fw-700">Our Services</h2>
               </div>
             </div>
@@ -26,7 +25,7 @@ function Services({ lightMode }) {
         <div className="row">
           {
             data.map(item => (
-              <div className="col-lg-4" key={item.id}>
+              <div className="col-lg-3" key={item.id}>
                 <div className="serv-item md-mb50 radius-10">
                   <div className="icon-img-60 mb-40">
                     <img src={`/${lightMode ? 'light' : 'dark'}/${item.image}`} alt="" />

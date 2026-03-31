@@ -4,6 +4,7 @@ import loadBackgroudImages from '@/common/loadBackgroudImages';
 import isInView from '@/common/isInView';
 //= Data
 import data from '@/pages/services/mobile-app-development/portfolio.json';
+import Arrowsvg from '../../../../public/svg/Arrowsvg';
 
 function Portfolio({ lightMode }) {
   useEffect(() => {
@@ -77,39 +78,41 @@ function Portfolio({ lightMode }) {
                   </div>
                   <span className="sub-title mb-15">{item.number} {item.type}</span>
                   <h2 className="mb-15">{item.title}.</h2>
-                  <div className="row justify-content-center">
-                    <div className="col-md-11">
+                  <div className="justify-content-center">
+                    <div className="col-md-12">
                       <p>{item.text}.</p>
+                      <br></br>
+                      <h3>{item.mainHeading}</h3>
                       <ul className="rest list-arrow mt-30">
-                        <li>
+                         <li>
                           <span className="icon">
-                            <svg width="100%" height="100%" viewBox="0 0 9 8" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path fillRule="evenodd" clipRule="evenodd"
-                                d="M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z"
-                                fill="currentColor"></path>
-                            </svg>
+                            <Arrowsvg/>
                           </span>
-                          <h6 className="inline fz-16 fw-400">{item.list1}</h6>
+                          <h6 className="inline fz-16 fw-400">{item.listItem1}</h6>
                         </li>
-                        <li className="mt-5">
+                         <li>
                           <span className="icon">
-                            <svg width="100%" height="100%" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fillRule="evenodd" clipRule="evenodd" d="M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z" fill="currentColor"></path>
-                            </svg>
+                            <Arrowsvg/>
                           </span>
-                          <h6 className="inline fz-16 fw-400">{item.list2}</h6>
+                          <h6 className="inline fz-16 fw-400">{item.listItem2}</h6>
                         </li>
-                        <li className="mt-5">
+                         <li>
                           <span className="icon">
-                            <svg width="100%" height="100%" viewBox="0 0 9 8" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path fillRule="evenodd" clipRule="evenodd"
-                                d="M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z"
-                                fill="currentColor"></path>
-                            </svg>
+                            <Arrowsvg/>
                           </span>
-                          <h6 className="inline fz-16 fw-400">{item.list3}</h6>
+                          <h6 className="inline fz-16 fw-400">{item.listItem3}</h6>
+                        </li>
+                         <li>
+                          <span className="icon">
+                            <Arrowsvg/>
+                          </span>
+                          <h6 className="inline fz-16 fw-400">{item.listItem4}</h6>
+                        </li>
+                         <li>
+                          <span className="icon">
+                            <Arrowsvg/>
+                          </span>
+                          <h6 className="inline fz-16 fw-400">{item.listItem5}</h6>
                         </li>
                       </ul>
                       <a href="#0" className="butn-circle d-flex align-items-center text-center mt-50">

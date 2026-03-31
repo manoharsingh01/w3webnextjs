@@ -18,8 +18,11 @@ function CallToAction({ lightMode }) {
               <h2 className="fz-70 fw-700">
                 <span>Have a project in mind?</span>
                 <br />
-                <span>Let’s get to work.</span>
+                <span>Let’s Turn Your Ideas into Results</span>
               </h2>
+              <p>Have an idea you’re ready to bring to life? Whether you’re planning a new website, mobile app, or a complete digital transformation, our team is here to help you move forward with confidence. We collaborate closely with you to understand your goals, define a clear roadmap, and deliver solutions that are scalable, secure, and results-driven.</p>
+              <br />
+              <h3>Start your project with us—let’s build something impactful together.</h3>
               <Link href={`/${lightMode ? 'light' : 'dark'}/page-contact`}
                 className="butn-circle colorbg-2 d-flex align-items-center text-center mt-50 m-auto">
                 <div className="full-width">

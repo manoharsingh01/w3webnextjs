@@ -12,13 +12,13 @@ function Services({ lightMode }) {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <h6 className="dot-titl-non colorbg-3 mb-10">Featured Services</h6>
-                <h2 className="fz-60 fw-700">Our Services</h2>
+                <h2 className="fz-60 fw-700">Trusted Software Development Company for Modern Businesses</h2>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center">
               <div className="text">
-                <p>Nemo enim ipsam voluptatem quia voluptas sit odit aut fugit, sed quia.</p>
+                <p>For digital success, it's very important to pick the right technology partner. W3 Web Technologies uses its technical know-how, industry knowledge, and strategic thinking to make software that fits with your business goals.</p>
+            
               </div>
             </div>
           </div>
@@ -27,7 +27,7 @@ function Services({ lightMode }) {
           {
             data.map(item => (
               <div className="col-lg-4" key={item.id}>
-                <div className="serv-item md-mb50 radius-10">
+                <div className="serv-item mb-30 md-mb50 radius-10">
                   <div className="icon-img-60 mb-40">
                     <img src={`/${lightMode ? 'light' : 'dark'}/${item.image}`} alt="" />
                   </div>

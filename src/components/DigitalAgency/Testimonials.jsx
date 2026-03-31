@@ -10,20 +10,10 @@ function Testimonials({ mainColor }) {
           <div className="col-lg-5 valign">
             <div className="cont">
               <div>
-                <h6 className="sub-title mb-15">Since From 2008</h6>
-                <h3>Keep pushing forward. We've got your back.</h3>
+                <h6 className="sub-title mb-15">Since From 2020</h6>
+                <h3>What Our Client Say About Us</h3>
                 <div className="text mt-10 pb-30 bord-thin-bottom">
-                  <p>Things go wrong have questions. We’ve understand. So we have people</p>
-                </div>
-                <div className="stauts d-flex mt-20">
-                  <div className="item d-flex align-items-center mt-30">
-                    <h2 className="mr-20">12k</h2>
-                    <p className="fz-14">Happy Users <br /> Around World</p>
-                  </div>
-                  <div className="item d-flex align-items-center ml-auto mt-30">
-                    <h2 className="mr-20">150k</h2>
-                    <p className="fz-14">Projects <br /> Already Done</p>
-                  </div>
+                  <p>Our clients appreciate our reliable services, clear communication, and result-driven approach. Their feedback reflects our commitment to delivering high-quality solutions that help businesses grow online.</p>
                 </div>
               </div>
             </div>

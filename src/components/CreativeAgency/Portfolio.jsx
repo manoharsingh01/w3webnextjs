@@ -8,15 +8,15 @@ function Portfolio() {
       <div className="container ontop">
         <div className="sec-lg-head mb-80">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-7">
               <div className="position-re">
-                <h6 className="dot-titl mb-10">Selected Projects</h6>
-                <h2 className="fz-70 fw-700">Featured Works</h2>
+                {/* <h6 className="dot-titl mb-10">Selected Projects</h6> */}
+                <h2 className="fz-70 fw-700">Our Work That Drives Real Results</h2>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center">
               <div className="text">
-                <p>Nemo enim ipsam voluptatem quia voluptas sit odit aut fugit, sed quia.</p>
+                <p>We design and develop high-performing websites, mobile applications, and digital solutions tailored to business goals. Each project reflects our focus on clean design, scalable technology, and measurable results.</p>
               </div>
             </div>
           </div>
@@ -32,11 +32,11 @@ function Portfolio() {
               </div>
               <div className="cont mt-30 d-flex">
                 <div>
-                  <h6 className="line-height-1">From our gallery</h6>
-                  <p>{data[0].type}</p>
+                  <h6 className="line-height-1">Memate</h6>
+                  <p>Business Management Software Platform</p>
                 </div>
                 <div className="ml-auto">
-                  <p className="fz-14">© {data[0].year}</p>
+                  <p className="fz-14">2026</p>
                 </div>
               </div>
             </div>
@@ -52,11 +52,11 @@ function Portfolio() {
                   </div>
                   <div className="cont mt-30 d-flex">
                     <div>
-                      <h6 className="line-height-1">From our gallery</h6>
-                      <p>{data[1].type}</p>
+                      <h6 className="line-height-1">Atlas Lending Group</h6>
+                      <p>Grow Smarter with Expert Support</p>
                     </div>
                     <div className="ml-auto">
-                      <p className="fz-14">© {data[1].year}</p>
+                      <p className="fz-14">2026</p>
                     </div>
                   </div>
                 </div>
@@ -74,11 +74,11 @@ function Portfolio() {
                   </div>
                   <div className="cont mt-30 d-flex">
                     <div>
-                      <h6 className="line-height-1">From our gallery</h6>
-                      <p>{data[2].type}</p>
+                      <h6 className="line-height-1">Australian Real Estate</h6>
+                      <p>Buy Property in Australia</p>
                     </div>
                     <div className="ml-auto">
-                      <p className="fz-14">© {data[2].year}</p>
+                      <p className="fz-14">2025</p>
                     </div>
                   </div>
                 </div>
@@ -96,11 +96,11 @@ function Portfolio() {
                   </div>
                   <div className="cont mt-30 d-flex">
                     <div>
-                      <h6 className="line-height-1">From our gallery</h6>
-                      <p>{data[3].type}</p>
+                      <h6 className="line-height-1">Wheels Respray </h6>
+                      <p>Sydney Wheels Respray</p>
                     </div>
                     <div className="ml-auto">
-                      <p className="fz-14">© {data[3].year}</p>
+                      <p className="fz-14">2025</p>
                     </div>
                   </div>
                 </div>

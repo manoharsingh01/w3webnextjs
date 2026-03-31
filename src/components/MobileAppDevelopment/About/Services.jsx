@@ -2,7 +2,7 @@ import React from 'react';
 //= Components
 import StatementSplitter from '@/components/Common/StatementSplitter';
 //= Data
-import data from '@/data/InnerPages/About/services.json'; 
+import data from '@/data/InnerPages/About/mobileServices.json';
 
 function Services({ lightMode }) {
   return (
@@ -12,14 +12,12 @@ function Services({ lightMode }) {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <h6 className="dot-titl-non colorbg-3 mb-10">Featured Services</h6>
-                <h2 className="fz-60 fw-700">Why Choose W3 Web Technologies for Mobile App Development</h2>
+                <h2 className="fz-60 fw-700">Our Mobile App Development Services</h2>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center">
               <div className="text">
-                <p>W3 Web Technologies delivers mobile app solutions focused on performance, scalability, and user experience. With a strong development process and modern technologies, every project is built to meet real business goals. The team ensures seamless execution from planning to launch, helping businesses create reliable, high-quality apps that drive growth and long-term success.
-</p>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit odit aut fugit, sed quia.</p>
               </div>
             </div>
           </div>
@@ -27,7 +25,7 @@ function Services({ lightMode }) {
         <div className="row">
           {
             data.map(item => (
-              <div className="col-lg-4" key={item.id}>
+              <div className="col-lg-4 mt-30" key={item.id}>
                 <div className="serv-item md-mb50 radius-10">
                   <div className="icon-img-60 mb-40">
                     <img src={`/${lightMode ? 'light' : 'dark'}/${item.image}`} alt="" />

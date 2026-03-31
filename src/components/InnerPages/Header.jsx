@@ -7,8 +7,8 @@ function Header({ data, subBg }) {
         <div className="row">
           <div className="col-lg-8">
             <div className="caption">
-              <h6 className="sub-title">{data.subTitle}</h6>
-              <h1 className="fz-55">{data.title}</h1>
+              <h6 className="sub-title">Software Development Services</h6>
+              <h1 className="fz-55">Scalable & Future-Ready Digital Solutions</h1>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ and technology to build seamless, high-performing digital experiences.</p>
             {
               new Array(5).fill().map((_, i) => (
                 <div className="item" key={i}>
-                  <h4>Services</h4>
+                  <h4>Services </h4>
                 </div>
               ))
             }

@@ -11,15 +11,16 @@ function CallToAction({ lightMode, innerPageStyle }) {
   return (
     <section className="call-action-img">
       <div className="container">
-        <div className="sec-bg-img bg-img parallaxie" data-background="/dark/assets/imgs/background/2.jpg"></div>
+        <div className="sec-bg-img bg-img parallaxie" data-background="/dark/assets/imgs/background/about_bg.jpg"></div>
         <div className="sec-lg-head section-padding">
           <div className="row ontop">
             <div className="col-11 d-flex align-items-center">
-              <div className="valign">
+              <div className="valign get_in_touch">
                 <h2 className="fz-50 d-rotate wow">
-                  <span className="rotate-text">Have a project in mind?</span>
-                  <span className="rotate-text">Let’s <span className={innerPageStyle ? '' : 'sub-font'}>get to work</span>.</span>
+                  <span className="rotate-text">Let’s Build Something Amazing</span>
                 </h2>
+                <p>W3 Web Technologies can help you with anything from launching a new digital product to improving your current online presence. Our expertise in web development, mobile apps, UX design, branding, AWS, CRM, and digital marketing services ensures your business is equipped to succeed in today’s digital landscape.</p>
+             <p><strong>Get in touch with us today so we can help you bring your next digital project to life.</strong></p>
               </div>
               <div className="ml-auto">
                 <Link href="/dark/page-contact" className="butn-circle d-flex align-items-center text-center m-auto">

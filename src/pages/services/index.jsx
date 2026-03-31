@@ -7,7 +7,7 @@ import Layout from '@/layouts/default';
 import Loader from '@/components/Common/Loader';
 import Navbar from '@/components/Preview/Navbar';
 import Header from '@/components/InnerPages/Header';
-import Services from '@/components/InnerPages/About/Services';
+import Services from '@/components/InnerPages/services/Services';
 import Portfolio from '@/components/InnerPages/Services/Portfolio';
 import ServicesTab from '@/components/DigitalAgency/ServicesTab';
 import FAQ from '@/components/InnerPages/Services/FAQ';

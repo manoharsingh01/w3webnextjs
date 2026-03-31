@@ -1,104 +1,16 @@
-import React, { useState } from "react";
-
-const accordionData = [
-  {
-    id: 1,
-    question: "What factors influence the cost of building a mobile app?",
-    answer: "The overall cost depends on several elements such as app complexity, number of features, design requirements, integrations, and the platforms you choose. Custom functionality, advanced security, and scalability planning can also impact pricing, as they require more development time and expertise.",
-    delay: ".1s"
-  },
-  {
-    id: 2,
-    question: "How do you plan a mobile app before development starts?",
-    answer: "The process begins with understanding business objectives, target users, and market demand. This is followed by defining core features, creating user flows, and building a structured roadmap that ensures the app solves real problems effectively.",
-    delay: ".2s"
-  },
-  {
-    id: 3,
-    question: "What makes an app successful in today’s competitive market?",
-    answer: "A successful app focuses on usability, speed, and real value for users. Clean design, smooth performance, and meaningful features that address user needs play a major role in achieving long-term engagement and retention.",
-    delay: ".3s"
-  },
-  {
-    id: 4,
-    question: "How do you ensure a smooth user experience in mobile apps?",
-    answer: "User experience is improved through research, wireframing, and testing. Every interaction is designed to be simple and intuitive, reducing friction and helping users complete actions quickly and efficiently.",
-    delay: ".4s"
-  },
-  {
-    id: 5,
-    question: "What is the importance of scalability in mobile apps?",
-    answer: "Scalability ensures that the app can handle increasing users, data, and features without affecting performance. A scalable app supports business growth and avoids the need for major structural changes in the future.",
-    delay: ".5s"
-  },
-  {
-    id: 6,
-    question: "How do mobile apps integrate with other systems or platforms?",
-    answer: "Integration is achieved through APIs that connect the app with external services like payment gateways, CRMs, or cloud platforms. This allows smooth data exchange and enhances overall functionality.",
-    delay: ".6s"
-  },
-  {
-    id: 7,
-    question: "What role does testing play in mobile app development?",
-    answer: "Testing helps identify bugs, performance issues, and usability problems before launch. It ensures the app runs smoothly across devices and provides a consistent experience to all users.",
-    delay: ".7s"
-  },
-  {
-    id: 8,
-    question: "How can mobile apps improve customer engagement?",
-    answer: "Mobile apps offer direct interaction through features like notifications, personalized content, and easy access to services. This helps businesses stay connected with users and build stronger relationships.",
-    delay: ".8s"
-  },
-  {
-    id: 9,
-    question: "What are the key stages of mobile app development?",
-    answer: "The main stages include planning, design, development, testing, deployment, and maintenance. Each phase plays a crucial role in ensuring the app is functional, reliable, and aligned with business goals.",
-    delay: ".9s"
-  },
-  {
-    id: 10,
-    question: "How do you maintain app performance after launch?",
-    answer: "Performance is maintained through regular updates, monitoring, and optimization. Fixing bugs, improving speed, and adding new features help keep the app relevant and efficient.",
-    delay: "1s"
-  },
-  {
-    id: 11,
-    question: "What technologies are commonly used in modern app development?",
-    answer: "Modern development uses a combination of frameworks, programming languages, and cloud-based tools to build secure, fast, and scalable applications tailored to different business needs.",
-    delay: "1.1s"
-  },
-  {
-    id: 12,
-    question: "How do you ensure data security in mobile applications?",
-    answer: "Security is handled through encryption, secure authentication, and regular vulnerability testing. Following best practices helps protect user data and maintain trust.",
-    delay: "1.2s"
-  },
-  {
-    id: 13,
-    question: "Can a mobile app evolve as business needs change?",
-    answer: "Yes, apps are designed to be flexible, allowing new features, updates, and improvements to be added over time without disrupting the existing system.",
-    delay: "1.3s"
-  },
-  {
-    id: 14,
-    question: "How do mobile apps support business growth?",
-    answer: "Mobile apps improve accessibility, streamline operations, and enhance customer experience, helping businesses reach a wider audience and increase overall efficiency.",
-    delay: "1.4s"
-  },
-  {
-    id: 15,
-    question: "What should businesses consider before starting app development?",
-    answer: "Businesses should clearly define their goals, audience, and key features. Having a well-planned strategy ensures better execution and long-term success.",
-    delay: "1.5s"
-  }
-];
+import React from 'react';
 
 function FAQ() {
-  const [activeId, setActiveId] = useState(null);
-
-  const openAccordion = (id) => {
-    setActiveId(activeId === id ? null : id);
-  };
+  function openAccordion(event) {
+    document.querySelectorAll('.accordion-info').forEach(element => {
+      element.classList.remove('active');
+      element.style.maxHeight = 0;
+      element.parentElement.classList.remove('active');
+    })
+    event.currentTarget.parentElement.classList.add('active');
+    event.currentTarget.nextElementSibling.style.maxHeight = '300px';
+    event.currentTarget.nextElementSibling.classList.add('active');
+  }
 
   return (
     <section className="intro-corp section-padding pt-0">
@@ -106,60 +18,128 @@ function FAQ() {
         <div className="row">
           <div className="col-lg-5">
             <div className="sec-head mb-40">
-              <h6 className="sub-title">FAQ.</h6>
+              <h6 className="sub-title">Frequently Asked Questions (FAQs)</h6>
             </div>
           </div>
-
           <div className="col-lg-7">
             <div className="cont">
-              <div className="text">
+              {/* <div className="text">
                 <h2 className="d-slideup wow">
                   <span className="sideup-text">
-                    <span className="up-text">
-                      Frequently Asked Questions (FAQs)
-                    </span>
+                    <span className="up-text">Watch the creative process</span>
+                  </span>
+                  <span className="sideup-text">
+                    <span className="up-text"><span>behind our digital marketing</span>.</span>
                   </span>
                 </h2>
-              </div>
-
+              </div> */}
               <div className="accordion bord mt-40">
-                {accordionData.map((item) => (
-                  <div
-                    key={item.id}
-                    className={`item mb-15 wow fadeInUp ${
-                      activeId === item.id ? "active" : ""
-                    }`}
-                    data-wow-delay={item.delay}
-                  >
-                    <div
-                      className="title"
-                      onClick={() => openAccordion(item.id)}
-                    >
-                      <h6 className="fz-18">{item.question}</h6>
-                      <span className="ico"></span>
-                    </div>
-
-                    {/* ✅ Toggle content */}
-                    <div
-                      className="accordion-info"
-                      style={{
-                        maxHeight:
-                          activeId === item.id ? "200px" : "0px",
-                        overflow: "hidden",
-                        transition: "0.3s ease",
-                      }}
-                    >
-                      <p className="fz-14">{item.answer}</p>
-                    </div>
+                <div className="item mb-15 wow fadeInUp" data-wow-delay=".1s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">1. What types of services do you offer for creating mobile apps?</h6>
+                    <span className="ico"></span>
                   </div>
-                ))}
+                  <div className="accordion-info">
+                    <p className="fz-14">We offer full mobile app development services, such as designing custom apps, developing apps for both iOS and Android, developing apps that work on multiple platforms using frameworks like React Native or Flutter, and helping you deploy your app.</p>
+                  </div>
+                </div>
+                <div className="item mb-15 wow fadeInUp" data-wow-delay=".3s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">2. What platforms can you use to make apps?</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">We make apps for both iOS and Android phones and tablets. We can also make hybrid or cross-platform apps that work on many devices if that's what you want.</p>
+                  </div>
+                </div>
+                <div className="item wow fadeInUp" data-wow-delay=".5s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">3. How long does it take to make an app for a phone?</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">The timeline changes depending on how complicated the app is, what features it needs, and how it should look. It can take a few months to make a simple app, but it can take longer to make a complex app with advanced features. After we know what you need, we'll give you a detailed timeline for the project.</p>
+                  </div>
+                </div>
+                     <div className="item wow fadeInUp" data-wow-delay=".5s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">4. What is the cost of making an app for a phone?</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">The cost of making an app depends on its size, features, design complexity, platforms, and technologies. After looking over your project's needs, we'll give you a clear quote that fits your budget and goals.</p>
+                  </div>
+                </div>
+                     <div className="item wow fadeInUp" data-wow-delay=".5s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">5. Do you design the UI and UX for mobile apps?</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">Yes, we offer mobile app development services that include user-cantered UI/UX design to make sure your app is easy to use, looks good, and works well on all devices.</p>
+                  </div>
+                </div>
+                     <div className="item wow fadeInUp" data-wow-delay=".5s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">6. Will my app be safe and work well?</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">Yes, for sure. We use best practices for performance optimization and strict security standards to keep data safe and improve the user experience throughout the app's life.</p>
+                  </div>
+                </div>
+                   <div className="item wow fadeInUp" data-wow-delay=".5s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">7. Can you help me submit my app to the app store and publish it?</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">Yes, we help you submit your app to the Apple App Store and Google Play Store. This includes making sure that all the necessary assets are ready, that the app follows the rules of each platform, and that the launch goes smoothly.</p>
+                  </div>
+                </div>
+                   <div className="item wow fadeInUp" data-wow-delay=".5s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">8. What help and upkeep do you offer after the launch?</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">We offer ongoing maintenance, updates, bug fixes, and feature upgrades to make sure your mobile app stays up to date with OS updates and user feedback.</p>
+                  </div>
+                </div>
+                      <div className="item wow fadeInUp" data-wow-delay=".5s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">9. How do you make sure that different devices can work together?</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">We do a lot of testing and quality assurance (QA) on a lot of different devices, screen sizes, and OS versions to make sure your app works perfectly on all the mobile devices you want it to.</p>
+                  </div>
+                </div>
+                      <div className="item wow fadeInUp" data-wow-delay=".5s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">10. What kinds of technology do you use to make mobile apps?</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">We use modern app development tools and frameworks, such as native languages like Swift and Kotlin and cross-platform frameworks like React Native and Flutter, to make high-quality mobile apps that fit your needs.</p>
+                  </div>
+                </div>
+                             <div className="item wow fadeInUp" data-wow-delay=".5s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">11. What do we need to do to start my mobile app project?</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">First, just get in touch with our team and tell them what you need or want from your app. We'll look over your idea, talk about your goals, and give you a custom plan, estimate, and timeline to make your mobile app a reality.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default FAQ;
+export default FAQ

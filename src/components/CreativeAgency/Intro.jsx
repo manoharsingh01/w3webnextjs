@@ -25,15 +25,15 @@ function Intro({ lightMode }) {
           </div>
           <div className="col-lg-7 valign">
             <div className="cont sec-lg-head">
-              <h6 className="dot-titl mb-20">About Agency</h6>
-              <h2 className="d-slideup wow">
+              <h6 className="dot-titl mb-20">Who We Are</h6>
+              {/* <h2 className="d-slideup wow">
                 <span className="sideup-text"><span className="up-text">We’re sharp brands creators</span></span>
                 <span className="sideup-text"><span className="up-text">open for any new collabs</span></span>
-              </h2>
+              </h2> */}
               <div className="row">
                 <div className="col-lg-12">
                   <div className="text mt-20">
-                    <p>Grow brands through bold and strategic creative, focused on searching new ways to showcase user content on digital support and envisioning the future arts.</p>
+                    <p>W3Web Technologies is a cutting-edge digital agency focused on building remarkable digital experiences. Our team uses both creativity and technology to come up with solutions that look great and work well for users. To get results that matter, we believe in smart design, a strong strategy, and smooth execution. Our goal is to help your brand connect with your audience, boost engagement, and elevate your business to new heights.</p>
                   </div>
                   <div className="underline">
                     <Link href="/about" className="mt-30 ls1 sub-title">Read More <i className="ml-5">
@@ -45,56 +45,6 @@ function Intro({ lightMode }) {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="row md-marg mt-100 justify-content-center">
-          <div className="col-lg-4 col-md-6">
-            <div className="item-serv md-mb50">
-              <div className="d-flex align-items-center pb-20 mb-30 bord-thin-bottom">
-                <div className="mr-30">
-                  <div className="icon-img-50">
-                    <img src={`/${lightMode ? 'light' : 'dark'}/assets/imgs/serv-icons/0.png`} alt="" />
-                  </div>
-                </div>
-                <div>
-                  <h6>Digital Product Design</h6>
-                </div>
-              </div>
-              <p className="fz-14">new ways to showcase user content on digital support and envisioning the
-                future arts.</p>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="item-serv md-mb50">
-              <div className="d-flex align-items-center pb-20 mb-30 bord-thin-bottom">
-                <div className="mr-30">
-                  <div className="icon-img-50">
-                    <img src={`/${lightMode ? 'light' : 'dark'}/assets/imgs/serv-icons/1.png`} alt="" />
-                  </div>
-                </div>
-                <div>
-                  <h6>Branding & Design</h6>
-                </div>
-              </div>
-              <p className="fz-14">new ways to showcase user content on digital support and envisioning the
-                future arts.</p>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="item-serv">
-              <div className="d-flex align-items-center pb-20 mb-30 bord-thin-bottom">
-                <div className="mr-30">
-                  <div className="icon-img-50">
-                    <img src={`/${lightMode ? 'light' : 'dark'}/assets/imgs/serv-icons/2.png`} alt="" />
-                  </div>
-                </div>
-                <div>
-                  <h6>Web Development</h6>
-                </div>
-              </div>
-              <p className="fz-14">new ways to showcase user content on digital support and envisioning the
-                future arts.</p>
             </div>
           </div>
         </div>

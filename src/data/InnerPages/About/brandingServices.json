@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "image": "assets/imgs/serv-icons/0.png",
+    "title": "Brand Strategy & Identity",
+    "text": "We develop mobile apps that are completely unique to your business's needs, workflows, and brand identity. Our solutions are made to grow, be safe, and work well with both business and consumer apps."
+  },
+  {
+    "id": 2,
+    "image": "assets/imgs/serv-icons/1.png",
+    "title": "Logo & Visual Identity System",
+    "text": "Using the latest Apple technologies, our iOS developers make apps that are smooth and fast. We make sure that your iPhone and iPad apps meet Apple's standards and the expectations of users around the world, from the idea stage to the App Store."
+  },
+  {
+    "id": 3,
+    "image": "assets/imgs/serv-icons/2.png",
+    "title": "Sensory & Emotional Branding",
+    "text": "We create Android apps that work well, are compatible with a lot of devices, and keep users interested. We want our sites to be easy to use, load quickly, and have a lot of features."
+  }
+  ,
+  {
+    "id": 4,
+   "image": "assets/imgs/serv-icons/0.png",
+    "title": "Digital Branding & Online Presence",
+    "text": "We create Android apps that work well, are compatible with a lot of devices, and keep users interested. We want our sites to be easy to use, load quickly, and have a lot of features."
+  }
+]

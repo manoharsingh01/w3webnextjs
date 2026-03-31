@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "image": "assets/imgs/serv-icons/0.png",
+    "title": "Custom Mobile App Development",
+    "text": "We develop mobile apps that are completely unique to your business's needs, workflows, and brand identity. Our solutions are made to grow, be safe, and work well with both business and consumer apps."
+  },
+  {
+    "id": 2,
+    "image": "assets/imgs/serv-icons/1.png",
+    "title": "iOS App Development",
+    "text": "Using the latest Apple technologies, our iOS developers make apps that are smooth and fast. We make sure that your iPhone and iPad apps meet Apple's standards and the expectations of users around the world, from the idea stage to the App Store."
+  },
+  {
+    "id": 3,
+    "image": "assets/imgs/serv-icons/2.png",
+    "title": "Android App Development",
+    "text": "We create Android apps that work well, are compatible with a lot of devices, and keep users interested. We want our sites to be easy to use, load quickly, and have a lot of features."
+  }
+  ,
+  {
+    "id": 4,
+    "image": "assets/imgs/serv-icons/0.png",
+    "title": "Cross-Platform App Development",
+    "text": "We create Android apps that work well, are compatible with a lot of devices, and keep users interested. We want our sites to be easy to use, load quickly, and have a lot of features."
+  }
+  ,
+  {
+    "id": 5,
+    "image": "assets/imgs/serv-icons/1.png",
+    "title": "UI/UX Design & App Strategy",
+    "text": "An effective approach and easy-to-use design are the first steps to making a successful app. Our UI/UX experts make wireframes, user journeys, and interfaces that are interesting and keep people coming back for more. They also make sure they fit with your product vision."
+  }
+  ,
+  {
+    "id": 6,
+    "image": "assets/imgs/serv-icons/2.png",
+    "title": "App Testing, Deployment & Ongoing Support",
+    "text": "We do a lot of testing to make sure that everything works well, is safe, and is stable on all devices. Our team handles submissions to the App Store and Google Play, and after the app is live, they keep it up to date and add new features."
+  }
+]

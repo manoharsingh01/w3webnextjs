@@ -5,18 +5,17 @@ function Header({ data, subBg }) {
     <header className={`page-header section-padding pb-0 ${subBg ? 'sub-bg' : ''}`}>
       <div className="container mt-80">
         <div className="row">
-          <div className="col-lg-8">
+          <div className="col-lg-9">
             <div className="caption">
-              <h6 className="sub-title">{data.subTitle}</h6>
-              <h1 className="fz-55">{data.title}</h1>
+              <h1 className="fz-55">Software Development Services - Scalable & Future-Ready Digital Solutions</h1>
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-5 offset-lg-4">
+          <div className="col-lg-9">
             <div className="text mt-30">
-              <p>At W3Web Technologies, we specialize in crafting cutting-edge web, mobile, software solutions and digital marketing that drive business success. Our expert developers blend creativity
-and technology to build seamless, high-performing digital experiences.</p>
+              <p>At W3 Web Technologies, we offer a full range of software development services to help businesses stay competitive, grow, and develop to new ideas in a digital world that is always changing. As a reliable software development company, we create secure, high-performance, and scalable software solutions that are tailored to meet the needs of each business.</p>
+            <p>Our team creates reliable custom software development solutions for businesses of all sizes, from startups to large enterprises. These solutions make operations easier, improve user experiences, and help businesses grow over time.</p>
             </div>
           </div>
         </div>
@@ -36,7 +35,7 @@ and technology to build seamless, high-performing digital experiences.</p>
             {
               new Array(5).fill().map((_, i) => (
                 <div className="item" key={i}>
-                  <h4>{data.text}</h4>
+                  <h4>Software Development</h4>
                 </div>
               ))
             }

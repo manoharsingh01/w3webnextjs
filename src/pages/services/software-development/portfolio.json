@@ -1,26 +1,39 @@
 [
   {
     "id": 1,
-    "image": "assets/imgs/portfolio/gallery/1.jpg",
-    "number": "01.",
-    "type": "Digital test",
-    "title": "Luxury Glassware",
-    "text": "We craft premium designs for agencies and global brands around the globe."
+    "image": "assets/imgs/portfolio/gallery/Custom-Software-Development.jpg",
+    "title": "Custom Software Development Services",
+    "text": "Every business is different, and off-the-shelf software doesn't always work. Our custom software development services are made to meet the needs of your business, your workflows, and your users. We work closely with startups, SMEs, and enterprises to develop software that enhances efficiency, automation, and digital transformation.",
+    "mainHeading": "We develop:",
+    "listItem1": "Software applications that run on the web",
+    "listItem2": "Systems for automating business processes",
+    "listItem3": "Customer portals and tools for employees",
+    "listItem4": "Platforms that are ready for the cloud and use APIs",
+    "listItem5": "Each solution is made to fit the standards of your industry and the goals of your business."
+
   },
   {
     "id": 2,
-    "image": "assets/imgs/portfolio/gallery/2.jpg",
-    "number": "02.",
-    "type": "Marketing",
-    "title": "Brand Identity",
-    "text": "We craft premium designs for agencies and global brands around the globe."
+    "image": "assets/imgs/portfolio/gallery/Enterprise-Software-Development.jpg",
+    "title": "Enterprise Software Development Solutions",
+    "text": "We offer robust enterprise software development services that can handle complicated tasks and large numbers of users for big companies and businesses that are growing. Our enterprise-grade solutions help organizations manage workflows, data, and operations efficiently with secure and scalable architectures.",
+    "mainHeading":"Our business solutions help companies:",
+    "listItem1": "Make operations more efficient",
+    "listItem2": "Make sure that systems and data work together smoothly.",
+    "listItem3": "Make security and compliance better",
+    "listItem4": "Support environments with many users and a lot of traffic",
+    "listItem5": "We make sure that your business software is always reliable, scalable, and ready for the future."
   },
   {
     "id": 3,
-    "image": "assets/imgs/portfolio/gallery/3.jpg",
-    "number": "03.",
-    "type": "Design",
-    "title": "Roseville Pottery",
-    "text": "We craft premium designs for agencies and global brands around the globe."
+    "image": "assets/imgs/portfolio/gallery/Software-Product-Development-Engineering.jpg",
+    "title": "Software Product Development & Engineering",
+    "text": "We help businesses turn their ideas into software products that are ready for sale. Our software product engineering services cover the whole life cycle, from coming up with an idea and building it to optimizing it and making it bigger.",
+    "mainHeading":"This includes:",
+    "listItem1": "Building the product architecture and the MVP",
+    "listItem2": "Planning for performance and scalability",
+    "listItem3": "Improvements to features and new versions",
+    "listItem4": "Support and maintenance that never ends",
+    "listItem5": "Support and maintenance that never ends"
   }
 ]

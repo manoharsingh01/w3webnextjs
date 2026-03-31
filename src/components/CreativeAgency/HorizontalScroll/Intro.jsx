@@ -16,38 +16,30 @@ function Intro() {
                     <h4>Recognition</h4>
                   </div>
                   <div className="item">
-                    <h4>Awards &</h4>
+                    <h4>Excellence</h4>
                   </div>
                   <div className="item">
-                    <h4>Recognition</h4>
+                    <h4>Recognised </h4>
                   </div>
                   <div className="item">
-                    <h4>Awards &</h4>
+                    <h4>for</h4>
                   </div>
                 </div>
                 <div className="box pb-20">
                   <div className="item">
-                    <h4>Awards &</h4>
+                    <h4>Quality &</h4>
                   </div>
                   <div className="item">
-                    <h4>Recognition</h4>
+                    <h4>Performance</h4>
                   </div>
-                  <div className="item">
-                    <h4>Awards &</h4>
-                  </div>
-                  <div className="item">
-                    <h4>Recognition</h4>
-                  </div>
-                  <div className="item">
-                    <h4>Awards &</h4>
-                  </div>
+                
                 </div>
               </div>
             </div>
           </div>
           <div className="col-lg-5 rest">
             <div className="text valign">
-              <p className="fz-14">Our area of practice is quite wide: design, development. The experts who work at our web design studio know exactly how to make your project unique, fresh, and profitable.</p>
+              <p className="fz-14">The Awards & Recognition we have received reflect our consistent efforts to deliver reliable solutions, maintain high standards, and exceed client expectations in every project we undertake.</p>
             </div>
           </div>
         </div>
