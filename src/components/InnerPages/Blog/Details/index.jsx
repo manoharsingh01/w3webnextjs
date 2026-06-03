@@ -171,7 +171,7 @@ function Post({ blogData }) {
           <div className="next-prv-post flex mt-50">
             {blogData.prev_post && (
               <div className="thumb-post bg-img" data-background={getImageUrl(blogData.prev_post.featured_image)}>
-                <Link href={blogData.prev_post.link || `/blog/${blogData.prev_post.slug}`}>
+                <Link href={`/dark/blog-details/${blogData.prev_post.slug}`}>
                   <span className="fz-12 text-u ls1 main-color mb-15"><i className="pe-7s-angle-left"></i> Prev Post</span>
                   <h6 className="fw-600 fz-16">{blogData.prev_post.title}</h6>
                 </Link>
@@ -179,7 +179,7 @@ function Post({ blogData }) {
             )}
             {blogData.next_post && (
               <div className="thumb-post ml-auto text-right bg-img" data-background={getImageUrl(blogData.next_post.featured_image)}>
-                <Link href={blogData.next_post.link || `/blog/${blogData.next_post.slug}`}>
+                <Link href={`/dark/blog-details/${blogData.next_post.slug}`}>
                   <span className="fz-12 text-u ls1 main-color mb-15">Next Post <i className="pe-7s-angle-right"></i></span>
                   <h6 className="fw-600 fz-16">{blogData.next_post.title}</h6>
                 </Link>
@@ -248,7 +248,7 @@ function RecentPosts({ recentPosts, publishDate }) {
                     <div className="cont">
                       <span className="date fz-12 ls1 text-u opacity-7 mb-15">{formatDate(post.created_at)}</span>
                       <h5>
-                        <a href={post.link}>{post.title}</a>
+                        <Link href={post.link || `/dark/blog-details/${post.slug}`}>{post.title}</Link>
                       </h5>
                       {/* <div className="tags colorbg mt-15">
                         <a href="#0" className="me-1">{post.tags_display[0]}</a>
@@ -489,12 +489,20 @@ function BlogDetails() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // if (!slug) return;
+    const blogSlug = Array.isArray(slug) ? slug[0] : slug;
+    if (!router.isReady) return;
+
+    if (!blogSlug) {
+      setBlogData(null);
+      setError('Invalid blog slug');
+      setLoading(false);
+      return;
+    }
 
     const fetchBlogData = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${BASE_URL}/blogs/slug/hello`);
+        const response = await fetch(`${BASE_URL}/blogs/slug/${encodeURIComponent(blogSlug)}`);
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -512,7 +520,7 @@ function BlogDetails() {
     };
 
     fetchBlogData();
-  }, [slug]);
+  }, [slug, router.isReady]);
 
   // Show loading state
   if (loading) {
